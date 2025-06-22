@@ -1,4 +1,4 @@
-function geckoC {
+function devTools {
     param (
         [Parameter(Mandatory)]
         [ValidateSet("compare")]
