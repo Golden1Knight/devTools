@@ -1,10 +1,10 @@
 function clear {cls}
-function win-cmd {
+function win-cmd {cmd}
+function m-rand {
 	param(
- 		[string[]]$Args
-    )
-
- 	$cmdLine = $Args -join " "
-    cmd.exe /c $cmdLine
+ 		[int]$mn = 0
+   		[int]$mx = 999999999999
+        )
+	Get-Random -Minimum $mn -Maximum $mx
 }
 	
