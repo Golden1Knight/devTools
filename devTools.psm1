@@ -7,7 +7,7 @@ function m-rand {
     )
     Get-Random -Minimum $mn -Maximum $mx
 }
-function Get-GuidFromPython {
+function g-guid {
     param(
         [string]$PythonExe = "python",
         [string]$GitHubUrl = "https://raw.githubusercontent.com/Golden1Knight/devTools/main/guid_generator.py"
