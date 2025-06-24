@@ -36,9 +36,9 @@ function p-fdtext {
     param(
         [Parameter(Mandatory=$true)]
         [string]$Text,
-	[string]$PythonExe = "python"
+	[string]$PythonExe = "python",
+        [string]$ScriptUrl = "https://raw.githubusercontent.com/Golden1Knight/devTools/main/fonted_text_tool.py"
     )
-    [string]$ScriptUrl = "https://raw.githubusercontent.com/Golden1Knight/devTools/main/fonted_text_tool.py"
         # Ścieżka do tymczasowego pobrania skryptu
     $tempScript = Join-Path $env:TEMP "fonted_text_tool.py"
 
